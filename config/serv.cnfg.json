@@ -1,0 +1,345 @@
+{
+    "FAIL": "11",
+    "SUCCESS": "00",
+    "NO_DATA": "No Data",
+    "AVAILABLE": "Available",
+
+    "PROFILE": {
+        "TYPE": "INFOPROFILE",
+        "COMPANY": {
+            "method": "getCompProfile",
+            "return": "getCompProfileReturn",
+            "param_req": "supplyCompReq",
+            "desc": "COMPANY PROFILE"
+        },
+        "COMPANY_CTC": {
+            "method": "getCompProfileCtc",
+            "return": "getCompProfileCtcReturn",
+            "param_req": "supplyCompCtcReq",
+            "desc": "COMPANY CTC PROFILE"
+        },
+        "BUSINESS": {
+            "method": "getBizProfile",
+            "return": "getBizProfileReturn",
+            "param_req": "supplyBizReq",
+            "desc": "BUSINESS PROFILE"
+        },
+        "BUSINESS_CTC": {
+            "method": "getBizProfileCtc",
+            "return": "getCompProfileCtcReturn",
+            "param_req": "supplyBizCtcReq",
+            "desc": "BUSINESS CTC PROFILE"
+        }
+    },
+
+    "ACGS": {
+        "QUERY": {
+            "method": "getInfoAcgsQuery",
+            "return": "getInfoAcgsQueryReturn",
+            "param_req": "acgsQueryReq",
+            "desc": "ACGS QUERY"
+        },
+        "INFO": {
+            "method": "getInfoAcgs",
+            "return": "getInfoAcgsReturn",
+            "param_req": "acgsReq",
+            "desc": "ACGS INFO"
+        },
+        "DOCS": {
+            "method": "getLatestDocument",
+            "return": "getLatestDocumentReturn",
+            "param_req": "latestDocumentReq",
+            "desc": "ACGS DOCS INFO"
+        }
+    },
+
+    "ENTITY": {
+        "REGISTRATION": {
+            "method": "getInfoRegistration",
+            "return": "getInfoRegistrationReturn",
+            "param_req": "supplyListReq",
+            "desc": "ENTITY REGISTRATION"
+        },
+        "DATERANGECNT": {
+            "method": "getInfoListingByDateRangeCnt",
+            "return": "getInfoListingByDateRangeCntReturn",
+            "param_req": "supplyPageCntReq",
+            "desc": "LISTING DATE CNT"
+        },
+        "DATERANGEPAGE": {
+            "method": "getInfoListingByDateRangePage",
+            "return": "getInfoListingByDateRangePageReturn",
+            "param_req": "supplyPageListReq",
+            "desc": "LISTING DATE PAGE"
+        },
+        "NEWREGNO": {
+            "method": "getNewFormatEntityNo",
+            "return": "getNewFormatEntityNoReturn",
+            "param_req": "newFormatEntityNoReq",
+            "desc": "NEW FORMAT ENTITY NO"
+        }
+    },
+
+    "PARAM": {
+        "INFOPARAM": {
+            "method": "getInfoParam",
+            "return": "getInfoParamReturn",
+            "param_req": "supplyParamReq",
+            "desc": "PARAM"
+        },
+        "INFOBIZCODE": {
+            "method": "getInfoBizCode",
+            "return": "getInfoBizCodeReturn",
+            "param_req": "supplyBizCodeReq",
+            "desc": "BIZCODE"
+        }
+    },
+
+    "CERT": {
+        "ISACT2016":{
+            "method": "isAct2016",
+            "return": "checkIfExistReturn",
+            "param_req": "req",
+            "desc": "ISACT 2016"
+        },
+
+        "ISCONVERTED":{
+            "method": "isCompanyConverted",
+            "return": "checkIfExistReturn",
+            "param_req": "req",
+            "desc": "ISCONVERTED"
+        },
+
+        "ISNAMECHGED":{
+            "method": "isNameChanged",
+            "return": "checkIfExistReturn",
+            "param_req": "req",
+            "desc": "ISNAMECHGED"
+        },
+
+        "INCORP": {
+            "method": "getCertIncorp",
+            "return": "getCertIncorpReturn",
+            "param_req": "supplyCertIncorpReq",
+            "desc": "CERT INCORP"
+        },
+
+        "INCORP_STS": {
+            "method": "getInfoIncorp",
+            "return": "getInfoIncorpReturn",
+            "param_req": "supplyIncorpReq",
+            "desc": "STATUS INCORP"
+        },
+
+        "INCORP_CTC": {
+            "method": "getCertIncorpCtc",
+            "return": "getCertIncorpCtcReturn",
+            "param_req": "supplyCertIncorpCtcReq",
+            "desc": "CERT INCORP CTC"
+        },
+
+        "CONV": {
+            "method": "getCertConversion",
+            "return": "getCertConversionReturn",
+            "param_req": "supplyIncorpReq",
+            "desc": "CERT CONVERSION"
+        },
+
+        "CONV_CTC": {
+            "method": "getCertConversionCtc",
+            "return": "getCertConversionCtcReturn",
+            "param_req": "supplyIncorpReq",
+            "desc": "CERT CONVERSION CTC"
+        },
+
+        "COMPNAMECHG": {
+            "method": "getInfoCompNameChg",
+            "return": "getInfoIncorpReturn",
+            "param_req": "supplyIncorpReq",
+            "desc": "CERT COMP NAME CHANGE"
+        },
+
+        "COMPNAMECHG_CTC": {
+            "method": "getInfoCompNameChgCtc",
+            "return": "getInfoIncorpReturn",
+            "param_req": "supplyIncorpReq",
+            "desc": "CERT COMP NAME CHANGE CTC"
+        }
+    },
+
+    "TERMINATION": {
+        "TYPE": "INFOROBTERLT",
+        "LIST": {
+            "method": "getInfoRobTerminationList",
+            "return": "getInfoRobTerminationListReturn",
+            "param_req": "supplyInfoReq",
+            "desc": "TERMINATION LIST"
+        },
+        "INFO":{
+            "method": "getInfoRobTermination",
+            "return": "getInfoRobTerminationReturn",
+            "param_req": "supplyInfoReq",
+            "desc": "TERMINATION INFO"
+        }
+    },
+
+    "FIN_COMP": {
+        "TYPE": "INFOFINHISTY",
+        "INFO": {
+            "method": "getInfoFinancial",
+            "return": "getInfoFinancialReturn",
+            "param_req": "supplyFinancialReq",
+            "desc": "FINANCIAL INFO"
+        },
+        "INFO_CTC":{
+            "method": "getInfoFinancialCtc",
+            "return": "getInfoFinancialCtcReturn",
+            "param_req": "supplyFinancialReq",
+            "desc": "FINANCIAL INFO CTC"
+        },
+        "YEAR": {
+            "method": "getInfoFinancialYear",
+            "return": "getInfoFinancialYearReturn",
+            "param_req": "supplyFinancialReq",
+            "desc": "FINANCIAL YEAR"
+        },
+        "INFO2": {
+            "method": "getInfoFin2",
+            "return": "getInfoFin2Return",
+            "param_req": "supplyFin2Req",
+            "desc": "FINANCIAL INFO 2"
+        },
+        "INFO3": {
+            "method": "getInfoFin3",
+            "return": "getInfoFin3Return",
+            "param_req": "supplyFin3Req",
+            "desc": "FINANCIAL INFO 3"
+        },
+        "INFO5": {
+            "method": "getInfoFin5",
+            "return": "getInfoFin5Return",
+            "param_req": "supplyFin5Req",
+            "desc": "FINANCIAL INFO 5"
+        },
+        "INFO10": {
+            "method": "getInfoFin10",
+            "return": "getInfoFin10Return",
+            "param_req": "supplyFin10Req",
+            "desc": "FINANCIAL INFO 10"
+        }
+    },
+
+    "BIZCERT": {
+        "BRANCH":{
+            "method": "getInfoBranchListing",
+            "return": "getInfoBranchListingReturn",
+            "param_req": "supplyBranchReq",
+            "desc": "BRANCH LIST"
+        },
+        "FORMD": {
+            "type": "INFOROBFORMD",
+            "method": "getBizCertCtc",
+            "return": "getBizCertCtcReturn",
+            "param_req": "getBizCertCtcReq",
+            "desc": "FORM D"
+        }
+    },
+
+    "CHARGES": {
+        "LIST":{
+            "method": "getInfoChargeList",
+            "return": "getInfoChargeListReturn",
+            "param_req": "supplyChargesReq",
+            "desc": "CHARGE LIST"
+        },
+        "INFO":{
+            "type": "INFOROCCHRGE",
+            "method": "getInfoCharges",
+            "return": "getInfoChargesReturn",
+            "param_req": "supplyChargesReq",
+            "desc": "INFO CHARGES"
+        },
+        "INFO_CTC":{
+            "type": "INFOROCCHRGE",
+            "method": "getInfoChargesCtc",
+            "return": "getInfoChargesCtcReturn",
+            "param_req": "supplyChargesReq",
+            "desc": "INFO CHARGES"
+        }
+    },
+
+    "PARTICULAR": {
+        "AUDIT_CTC": {
+            "method": "getParticularsOfAdtFirmCtc",
+            "return": "getParticularsOfAdtFirmCtcReturn",
+            "param_req": "req",
+            "desc": "AUDIT FIRM CTC"
+        },
+        "AUDIT": {
+            "method": "getParticularsOfAdtFirm",
+            "return": "getParticularsOfAdtFirmReturn",
+            "param_req": "req",
+            "desc": "AUDIT FIRM"
+        },
+        "COSEC": {
+            "method": "getParticularsOfCosec",
+            "return": "getParticularsOfCosecReturn",
+            "param_req": "req",
+            "desc": "PARTICULAR OF COMPANY SECRETARY"
+        },
+        "COSEC_CTC": {
+            "method": "getParticularsOfCosecCtc",
+            "return": "getParticularsOfCosecCtcReturn",
+            "param_req": "req",
+            "desc": "PARTICULAR OF COMPANY SECRETARY CTC"
+        },
+        "OFFICER": {
+            "method": "getRocBusinessOfficers",
+            "return": "getRocBusinessOfficersReturn",
+            "param_req": "rocCompanyOfficersReq",
+            "desc": "PARTICULAR OF DIRECTOR/OFFICER"
+        },
+        "OFFICER_CTC": {
+            "method": "getRocBizOfficersCtc",
+            "return": "getRocBizOfficersCtcReturn",
+            "param_req": "rocCompanyOfficersReq",
+            "desc": "PARTICULAR OF DIRECTOR/OFFICE CTC"
+        },
+        "SHAREHOLDER": {
+            "method": "getDetailsOfShareholders",
+            "return": "getDetailsOfShareholdersReturn",
+            "param_req": "req",
+            "desc": "PARTICULAR OF SHAREHOLDER"
+        },
+        "SHAREHOLDER_CTC": {
+            "method": "getDtlsOfShareholdersCtc",
+            "return": "getDtlsOfShareholdersCtcReturn",
+            "param_req": "req",
+            "desc": "PARTICULAR OF SHAREHOLDER CTC"
+        },
+        "CAPITAL": {
+            "method": "getDetailsOfShareCapital",
+            "return": "getDetailsOfShareCapitalReturn",
+            "param_req": "req",
+            "desc": "PARTICULAR OF SHARE CAPITAL"
+        },
+        "CAPITAL_CTC": {
+            "method": "getDtlsOfShareCapCtc",
+            "return": "getDtlsOfShareCapCtcReturn",
+            "param_req": "req",
+            "desc": "PARTICULAR OF SHARE CAPITAL CTC"
+        },
+        "ADDRESS": {
+            "method": "getRocChangesRegisteredAddress",
+            "return": "getRocChangesRegisteredAddressReturn",
+            "param_req": "cRegisteredAddr",
+            "desc": "PARTICULAR OF REGISTER ADDRESS"
+        },
+        "ADDRESS_CTC": {
+            "method": "getRocChgRegAddrCtc",
+            "return": "getRocChgRegAddrCtcReturn",
+            "param_req": "cRegisteredAddr",
+            "desc": "PARTICULAR OF REGISTER ADDRESS CTC"
+        }
+    }
+}

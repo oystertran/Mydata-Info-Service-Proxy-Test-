@@ -1,0 +1,17 @@
+{
+    "APP_AGENCY": "MYDATA",
+    "ENV": "DEVT",
+    "APP_TIMEOUT": 75000,
+    "APP_PORT": 5305,
+    "APP_NAME": "SSMMW-INFO",
+    "APP_WORKER": 5,
+    "SSMMW_QNAME": "SSMMW-INFO",
+    "JOB_TIMEOUT": {
+        "FREE": 26000,
+        "PAID": 70000
+    },
+    "SSMMW_TIMEOUT": {
+        "FREE": 5000,
+        "PAID": 70000
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "DEVT": {
+        "HOST": "172.19.194.138",
+        "USER": "apiuser",
+        "PASSWORD": "xs@4pImysql",
+        "DB": "mydataapi-stag",
+        "dialect": "mysql",
+        "timezone": "+08:00",
+        "pool": {
+            "max": 10,
+            "min": 0,
+            "acquire": 30000,
+            "idle": 10000
+        }
+    },
+    "STAG": {
+        "HOST": "172.19.194.138",
+        "USER": "apiuser",
+        "PASSWORD": "xs@4pImysql",
+        "DB": "mydataapi-stag",
+        "dialect": "mysql",
+        "timezone": "+08:00",
+        "pool": {
+            "max": 10,
+            "min": 0,
+            "acquire": 30000,
+            "idle": 10000
+        }
+    },
+    "PROD": {
+        "HOST": "172.19.194.138",
+        "USER": "apiuser",
+        "PASSWORD": "xs@4pImysql",
+        "DB": "mydataapi-stag",
+        "dialect": "mysql",
+        "timezone": "+08:00",
+        "pool": {
+            "max": 10,
+            "min": 0,
+            "acquire": 30000,
+            "idle": 10000
+        },
+        "logging": false
+    }
+}

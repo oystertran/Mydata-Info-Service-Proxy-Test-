@@ -1,0 +1,1428 @@
+<?xml version="1.0" encoding="UTF-8"?><!--File InfoServiceFuse.wsdl, application NewInfoProfile--><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="InfoService" targetNamespace="http://inf.ssm.com.my" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://inf.ssm.com.my" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:documentation>
+    <wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <generatedXSD location="InfoServiceFuse_InlineSchema1.xsd"/>
+        <binding hasEncoding="false" imported="true" name="InfoServiceSoapBinding" originalBindingStyle="document"/>
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://inf.ssm.com.my">
+<xsd:include schemaLocation="InfoServicexsd0.xsd"/>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getInfoListingByDateRangeCntResponse">
+    <wsdl:part element="tns:getInfoListingByDateRangeCntResponse" name="getInfoListingByDateRangeCntResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getParticularsOfAdtFirm">
+    <wsdl:part element="tns:getParticularsOfAdtFirm" name="getParticularsOfAdtFirm">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRocChangesRegisteredAddress">
+    <wsdl:part element="tns:getRocChangesRegisteredAddress" name="getRocChangesRegisteredAddress">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoChargeList">
+    <wsdl:part element="tns:getInfoChargeList" name="getInfoChargeList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoRobTerminationCtc">
+    <wsdl:part element="tns:getInfoRobTerminationCtc" name="getInfoRobTerminationCtc">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoFinancialResponse">
+    <wsdl:part element="tns:getInfoFinancialResponse" name="getInfoFinancialResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBasicCompProf">
+    <wsdl:part element="tns:getBasicCompProf" name="getBasicCompProf">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoChargesResponse">
+    <wsdl:part element="tns:getInfoChargesResponse" name="getInfoChargesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCertIncorp">
+    <wsdl:part element="tns:getCertIncorp" name="getCertIncorp">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoFin10Response">
+    <wsdl:part element="tns:getInfoFin10Response" name="getInfoFin10Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBizProfile">
+    <wsdl:part element="tns:getBizProfile" name="getBizProfile">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getFinComparison">
+    <wsdl:part element="tns:getFinComparison" name="getFinComparison">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoRegistration">
+    <wsdl:part element="tns:getInfoRegistration" name="getInfoRegistration">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDtlsOfShareholdersCtcResponse">
+    <wsdl:part element="tns:getDtlsOfShareholdersCtcResponse" name="getDtlsOfShareholdersCtcResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoIncorp">
+    <wsdl:part element="tns:getInfoIncorp" name="getInfoIncorp">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isMyCoID2016">
+    <wsdl:part element="tns:isMyCoID2016" name="isMyCoID2016">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoProfileResponse">
+    <wsdl:part element="tns:getInfoProfileResponse" name="getInfoProfileResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDtlsOfShareholdersCtc">
+    <wsdl:part element="tns:getDtlsOfShareholdersCtc" name="getDtlsOfShareholdersCtc">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBasicCompProfResponse">
+    <wsdl:part element="tns:getBasicCompProfResponse" name="getBasicCompProfResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoAcgsResponse">
+    <wsdl:part element="tns:getInfoAcgsResponse" name="getInfoAcgsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCertIncorpCtc">
+    <wsdl:part element="tns:getCertIncorpCtc" name="getCertIncorpCtc">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoListingResponse">
+    <wsdl:part element="tns:getInfoListingResponse" name="getInfoListingResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCertConversionResponse">
+    <wsdl:part element="tns:getCertConversionResponse" name="getCertConversionResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoAcgs">
+    <wsdl:part element="tns:getInfoAcgs" name="getInfoAcgs">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListAddressYearChgs">
+    <wsdl:part element="tns:getListAddressYearChgs" name="getListAddressYearChgs">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoFin5">
+    <wsdl:part element="tns:getInfoFin5" name="getInfoFin5">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRocChgRegAddrCtc">
+    <wsdl:part element="tns:getRocChgRegAddrCtc" name="getRocChgRegAddrCtc">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoFin3">
+    <wsdl:part element="tns:getInfoFin3" name="getInfoFin3">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDtlsOfShareCapCtcResponse">
+    <wsdl:part element="tns:getDtlsOfShareCapCtcResponse" name="getDtlsOfShareCapCtcResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoFin2">
+    <wsdl:part element="tns:getInfoFin2" name="getInfoFin2">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoChargesCtc">
+    <wsdl:part element="tns:getInfoChargesCtc" name="getInfoChargesCtc">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoBizCode">
+    <wsdl:part element="tns:getInfoBizCode" name="getInfoBizCode">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRocChgRegAddrCtcResponse">
+    <wsdl:part element="tns:getRocChgRegAddrCtcResponse" name="getRocChgRegAddrCtcResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoListingByDateRangePage">
+    <wsdl:part element="tns:getInfoListingByDateRangePage" name="getInfoListingByDateRangePage">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRocBizOfficersCtc">
+    <wsdl:part element="tns:getRocBizOfficersCtc" name="getRocBizOfficersCtc">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoBizCodeResponse">
+    <wsdl:part element="tns:getInfoBizCodeResponse" name="getInfoBizCodeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoCompNameChgCtcResponse">
+    <wsdl:part element="tns:getInfoCompNameChgCtcResponse" name="getInfoCompNameChgCtcResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoFin10">
+    <wsdl:part element="tns:getInfoFin10" name="getInfoFin10">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoFinancialYear">
+    <wsdl:part element="tns:getInfoFinancialYear" name="getInfoFinancialYear">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDetailsOfShareCapital">
+    <wsdl:part element="tns:getDetailsOfShareCapital" name="getDetailsOfShareCapital">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoCompNameChgResponse">
+    <wsdl:part element="tns:getInfoCompNameChgResponse" name="getInfoCompNameChgResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCompProfileCtcResponse">
+    <wsdl:part element="tns:getCompProfileCtcResponse" name="getCompProfileCtcResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLatestDocumentResponse">
+    <wsdl:part element="tns:getLatestDocumentResponse" name="getLatestDocumentResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoRegistrationResponse">
+    <wsdl:part element="tns:getInfoRegistrationResponse" name="getInfoRegistrationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isCompanyConverted">
+    <wsdl:part element="tns:isCompanyConverted" name="isCompanyConverted">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBizProfileResponse">
+    <wsdl:part element="tns:getBizProfileResponse" name="getBizProfileResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoCompConversionResponse">
+    <wsdl:part element="tns:getInfoCompConversionResponse" name="getInfoCompConversionResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isNameChangedResponse">
+    <wsdl:part element="tns:isNameChangedResponse" name="isNameChangedResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListOfficerYearChgsResponse">
+    <wsdl:part element="tns:getListOfficerYearChgsResponse" name="getListOfficerYearChgsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRocBizOfficersCtcResponse">
+    <wsdl:part element="tns:getRocBizOfficersCtcResponse" name="getRocBizOfficersCtcResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDetailsOfShareholders">
+    <wsdl:part element="tns:getDetailsOfShareholders" name="getDetailsOfShareholders">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListOfficerYearChgs">
+    <wsdl:part element="tns:getListOfficerYearChgs" name="getListOfficerYearChgs">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBizProfileCtcResponse">
+    <wsdl:part element="tns:getBizProfileCtcResponse" name="getBizProfileCtcResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isMyCoID2016Response">
+    <wsdl:part element="tns:isMyCoID2016Response" name="isMyCoID2016Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCompProfileCtc">
+    <wsdl:part element="tns:getCompProfileCtc" name="getCompProfileCtc">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCertConversionCtcResponse">
+    <wsdl:part element="tns:getCertConversionCtcResponse" name="getCertConversionCtcResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoIncorpResponse">
+    <wsdl:part element="tns:getInfoIncorpResponse" name="getInfoIncorpResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoRobTerminationListResponse">
+    <wsdl:part element="tns:getInfoRobTerminationListResponse" name="getInfoRobTerminationListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isAct2016">
+    <wsdl:part element="tns:isAct2016" name="isAct2016">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoBranchListing">
+    <wsdl:part element="tns:getInfoBranchListing" name="getInfoBranchListing">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoFin5Response">
+    <wsdl:part element="tns:getInfoFin5Response" name="getInfoFin5Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isAct2016Response">
+    <wsdl:part element="tns:isAct2016Response" name="isAct2016Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoChargeListResponse">
+    <wsdl:part element="tns:getInfoChargeListResponse" name="getInfoChargeListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCertConversionCtc">
+    <wsdl:part element="tns:getCertConversionCtc" name="getCertConversionCtc">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCompProfile">
+    <wsdl:part element="tns:getCompProfile" name="getCompProfile">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoListing">
+    <wsdl:part element="tns:getInfoListing" name="getInfoListing">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoParamResponse">
+    <wsdl:part element="tns:getInfoParamResponse" name="getInfoParamResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoFinancial">
+    <wsdl:part element="tns:getInfoFinancial" name="getInfoFinancial">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getFinComparisonResponse">
+    <wsdl:part element="tns:getFinComparisonResponse" name="getFinComparisonResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDetailsOfShareholdersResponse">
+    <wsdl:part element="tns:getDetailsOfShareholdersResponse" name="getDetailsOfShareholdersResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoRobTermination">
+    <wsdl:part element="tns:getInfoRobTermination" name="getInfoRobTermination">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBizProfileCtc">
+    <wsdl:part element="tns:getBizProfileCtc" name="getBizProfileCtc">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getParticularsOfAdtFirmResponse">
+    <wsdl:part element="tns:getParticularsOfAdtFirmResponse" name="getParticularsOfAdtFirmResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCertRegForeignCtcResponse">
+    <wsdl:part element="tns:getCertRegForeignCtcResponse" name="getCertRegForeignCtcResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoFinancialYearResponse">
+    <wsdl:part element="tns:getInfoFinancialYearResponse" name="getInfoFinancialYearResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoProfile">
+    <wsdl:part element="tns:getInfoProfile" name="getInfoProfile">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCompProfileResponse">
+    <wsdl:part element="tns:getCompProfileResponse" name="getCompProfileResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLatestDocument">
+    <wsdl:part element="tns:getLatestDocument" name="getLatestDocument">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getParticularsOfCosec">
+    <wsdl:part element="tns:getParticularsOfCosec" name="getParticularsOfCosec">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRocChangesRegisteredAddressResponse">
+    <wsdl:part element="tns:getRocChangesRegisteredAddressResponse" name="getRocChangesRegisteredAddressResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoParam">
+    <wsdl:part element="tns:getInfoParam" name="getInfoParam">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoChargesCtcResponse">
+    <wsdl:part element="tns:getInfoChargesCtcResponse" name="getInfoChargesCtcResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCertConversion">
+    <wsdl:part element="tns:getCertConversion" name="getCertConversion">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoRobTerminationResponse">
+    <wsdl:part element="tns:getInfoRobTerminationResponse" name="getInfoRobTerminationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getNewFormatEntityNo">
+    <wsdl:part element="tns:getNewFormatEntityNo" name="getNewFormatEntityNo">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getNewFormatEntityNoResponse">
+    <wsdl:part element="tns:getNewFormatEntityNoResponse" name="getNewFormatEntityNoResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCertIncorpResponse">
+    <wsdl:part element="tns:getCertIncorpResponse" name="getCertIncorpResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoCharges">
+    <wsdl:part element="tns:getInfoCharges" name="getInfoCharges">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoFin2Response">
+    <wsdl:part element="tns:getInfoFin2Response" name="getInfoFin2Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getParticularsOfCosecResponse">
+    <wsdl:part element="tns:getParticularsOfCosecResponse" name="getParticularsOfCosecResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCertIncorpCtcResponse">
+    <wsdl:part element="tns:getCertIncorpCtcResponse" name="getCertIncorpCtcResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoCompConversion">
+    <wsdl:part element="tns:getInfoCompConversion" name="getInfoCompConversion">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoRobTerminationCtcResponse">
+    <wsdl:part element="tns:getInfoRobTerminationCtcResponse" name="getInfoRobTerminationCtcResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isNameChanged">
+    <wsdl:part element="tns:isNameChanged" name="isNameChanged">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoCompNameChg">
+    <wsdl:part element="tns:getInfoCompNameChg" name="getInfoCompNameChg">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListAddressYearChgsResponse">
+    <wsdl:part element="tns:getListAddressYearChgsResponse" name="getListAddressYearChgsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoBranchListingResponse">
+    <wsdl:part element="tns:getInfoBranchListingResponse" name="getInfoBranchListingResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isCompanyConvertedResponse">
+    <wsdl:part element="tns:isCompanyConvertedResponse" name="isCompanyConvertedResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCertRegForeignResponse">
+    <wsdl:part element="tns:getCertRegForeignResponse" name="getCertRegForeignResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRocBusinessOfficers">
+    <wsdl:part element="tns:getRocBusinessOfficers" name="getRocBusinessOfficers">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBizCertCtcResponse">
+    <wsdl:part element="tns:getBizCertCtcResponse" name="getBizCertCtcResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoListingByDateRangeResponse">
+    <wsdl:part element="tns:getInfoListingByDateRangeResponse" name="getInfoListingByDateRangeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoListingByDateRange">
+    <wsdl:part element="tns:getInfoListingByDateRange" name="getInfoListingByDateRange">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDtlsOfShareCapCtc">
+    <wsdl:part element="tns:getDtlsOfShareCapCtc" name="getDtlsOfShareCapCtc">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoRobTerminationList">
+    <wsdl:part element="tns:getInfoRobTerminationList" name="getInfoRobTerminationList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoFinancialCtc">
+    <wsdl:part element="tns:getInfoFinancialCtc" name="getInfoFinancialCtc">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getParticularsOfCosecCtc">
+    <wsdl:part element="tns:getParticularsOfCosecCtc" name="getParticularsOfCosecCtc">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCertRegForeignCtc">
+    <wsdl:part element="tns:getCertRegForeignCtc" name="getCertRegForeignCtc">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoAcgsQuery">
+    <wsdl:part element="tns:getInfoAcgsQuery" name="getInfoAcgsQuery">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoAcgsQueryResponse">
+    <wsdl:part element="tns:getInfoAcgsQueryResponse" name="getInfoAcgsQueryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getParticularsOfAdtFirmCtcResponse">
+    <wsdl:part element="tns:getParticularsOfAdtFirmCtcResponse" name="getParticularsOfAdtFirmCtcResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRocBusinessOfficersResponse">
+    <wsdl:part element="tns:getRocBusinessOfficersResponse" name="getRocBusinessOfficersResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDetailsOfShareCapitalResponse">
+    <wsdl:part element="tns:getDetailsOfShareCapitalResponse" name="getDetailsOfShareCapitalResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getParticularsOfAdtFirmCtc">
+    <wsdl:part element="tns:getParticularsOfAdtFirmCtc" name="getParticularsOfAdtFirmCtc">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoFinancialCtcResponse">
+    <wsdl:part element="tns:getInfoFinancialCtcResponse" name="getInfoFinancialCtcResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCertRegForeign">
+    <wsdl:part element="tns:getCertRegForeign" name="getCertRegForeign">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoListingByDateRangeCnt">
+    <wsdl:part element="tns:getInfoListingByDateRangeCnt" name="getInfoListingByDateRangeCnt">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBizCertCtc">
+    <wsdl:part element="tns:getBizCertCtc" name="getBizCertCtc">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoFin3Response">
+    <wsdl:part element="tns:getInfoFin3Response" name="getInfoFin3Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getParticularsOfCosecCtcResponse">
+    <wsdl:part element="tns:getParticularsOfCosecCtcResponse" name="getParticularsOfCosecCtcResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoCompNameChgCtc">
+    <wsdl:part element="tns:getInfoCompNameChgCtc" name="getInfoCompNameChgCtc">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfoListingByDateRangePageResponse">
+    <wsdl:part element="tns:getInfoListingByDateRangePageResponse" name="getInfoListingByDateRangePageResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="InfoService">
+    <wsdl:operation name="getParticularsOfAdtFirm">
+      <wsdl:input message="tns:getParticularsOfAdtFirm" name="getParticularsOfAdtFirm">
+    </wsdl:input>
+      <wsdl:output message="tns:getParticularsOfAdtFirmResponse" name="getParticularsOfAdtFirmResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRocChangesRegisteredAddress">
+      <wsdl:input message="tns:getRocChangesRegisteredAddress" name="getRocChangesRegisteredAddress">
+    </wsdl:input>
+      <wsdl:output message="tns:getRocChangesRegisteredAddressResponse" name="getRocChangesRegisteredAddressResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoChargeList">
+      <wsdl:input message="tns:getInfoChargeList" name="getInfoChargeList">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoChargeListResponse" name="getInfoChargeListResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoRobTerminationCtc">
+      <wsdl:input message="tns:getInfoRobTerminationCtc" name="getInfoRobTerminationCtc">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoRobTerminationCtcResponse" name="getInfoRobTerminationCtcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoRobTermination">
+      <wsdl:input message="tns:getInfoRobTermination" name="getInfoRobTermination">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoRobTerminationResponse" name="getInfoRobTerminationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBizProfileCtc">
+      <wsdl:input message="tns:getBizProfileCtc" name="getBizProfileCtc">
+    </wsdl:input>
+      <wsdl:output message="tns:getBizProfileCtcResponse" name="getBizProfileCtcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBasicCompProf">
+      <wsdl:input message="tns:getBasicCompProf" name="getBasicCompProf">
+    </wsdl:input>
+      <wsdl:output message="tns:getBasicCompProfResponse" name="getBasicCompProfResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoProfile">
+      <wsdl:input message="tns:getInfoProfile" name="getInfoProfile">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoProfileResponse" name="getInfoProfileResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertIncorp">
+      <wsdl:input message="tns:getCertIncorp" name="getCertIncorp">
+    </wsdl:input>
+      <wsdl:output message="tns:getCertIncorpResponse" name="getCertIncorpResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLatestDocument">
+      <wsdl:input message="tns:getLatestDocument" name="getLatestDocument">
+    </wsdl:input>
+      <wsdl:output message="tns:getLatestDocumentResponse" name="getLatestDocumentResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getParticularsOfCosec">
+      <wsdl:input message="tns:getParticularsOfCosec" name="getParticularsOfCosec">
+    </wsdl:input>
+      <wsdl:output message="tns:getParticularsOfCosecResponse" name="getParticularsOfCosecResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBizProfile">
+      <wsdl:input message="tns:getBizProfile" name="getBizProfile">
+    </wsdl:input>
+      <wsdl:output message="tns:getBizProfileResponse" name="getBizProfileResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFinComparison">
+      <wsdl:input message="tns:getFinComparison" name="getFinComparison">
+    </wsdl:input>
+      <wsdl:output message="tns:getFinComparisonResponse" name="getFinComparisonResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoRegistration">
+      <wsdl:input message="tns:getInfoRegistration" name="getInfoRegistration">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoRegistrationResponse" name="getInfoRegistrationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoIncorp">
+      <wsdl:input message="tns:getInfoIncorp" name="getInfoIncorp">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoIncorpResponse" name="getInfoIncorpResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isMyCoID2016">
+      <wsdl:input message="tns:isMyCoID2016" name="isMyCoID2016">
+    </wsdl:input>
+      <wsdl:output message="tns:isMyCoID2016Response" name="isMyCoID2016Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoParam">
+      <wsdl:input message="tns:getInfoParam" name="getInfoParam">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoParamResponse" name="getInfoParamResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDtlsOfShareholdersCtc">
+      <wsdl:input message="tns:getDtlsOfShareholdersCtc" name="getDtlsOfShareholdersCtc">
+    </wsdl:input>
+      <wsdl:output message="tns:getDtlsOfShareholdersCtcResponse" name="getDtlsOfShareholdersCtcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertConversion">
+      <wsdl:input message="tns:getCertConversion" name="getCertConversion">
+    </wsdl:input>
+      <wsdl:output message="tns:getCertConversionResponse" name="getCertConversionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNewFormatEntityNo">
+      <wsdl:input message="tns:getNewFormatEntityNo" name="getNewFormatEntityNo">
+    </wsdl:input>
+      <wsdl:output message="tns:getNewFormatEntityNoResponse" name="getNewFormatEntityNoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertIncorpCtc">
+      <wsdl:input message="tns:getCertIncorpCtc" name="getCertIncorpCtc">
+    </wsdl:input>
+      <wsdl:output message="tns:getCertIncorpCtcResponse" name="getCertIncorpCtcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoAcgs">
+      <wsdl:input message="tns:getInfoAcgs" name="getInfoAcgs">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoAcgsResponse" name="getInfoAcgsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListAddressYearChgs">
+      <wsdl:input message="tns:getListAddressYearChgs" name="getListAddressYearChgs">
+    </wsdl:input>
+      <wsdl:output message="tns:getListAddressYearChgsResponse" name="getListAddressYearChgsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoFin5">
+      <wsdl:input message="tns:getInfoFin5" name="getInfoFin5">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoFin5Response" name="getInfoFin5Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRocChgRegAddrCtc">
+      <wsdl:input message="tns:getRocChgRegAddrCtc" name="getRocChgRegAddrCtc">
+    </wsdl:input>
+      <wsdl:output message="tns:getRocChgRegAddrCtcResponse" name="getRocChgRegAddrCtcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoFin3">
+      <wsdl:input message="tns:getInfoFin3" name="getInfoFin3">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoFin3Response" name="getInfoFin3Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoFin2">
+      <wsdl:input message="tns:getInfoFin2" name="getInfoFin2">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoFin2Response" name="getInfoFin2Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoChargesCtc">
+      <wsdl:input message="tns:getInfoChargesCtc" name="getInfoChargesCtc">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoChargesCtcResponse" name="getInfoChargesCtcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoBizCode">
+      <wsdl:input message="tns:getInfoBizCode" name="getInfoBizCode">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoBizCodeResponse" name="getInfoBizCodeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoCharges">
+      <wsdl:input message="tns:getInfoCharges" name="getInfoCharges">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoChargesResponse" name="getInfoChargesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoListingByDateRangePage">
+      <wsdl:input message="tns:getInfoListingByDateRangePage" name="getInfoListingByDateRangePage">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoListingByDateRangePageResponse" name="getInfoListingByDateRangePageResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRocBizOfficersCtc">
+      <wsdl:input message="tns:getRocBizOfficersCtc" name="getRocBizOfficersCtc">
+    </wsdl:input>
+      <wsdl:output message="tns:getRocBizOfficersCtcResponse" name="getRocBizOfficersCtcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoCompConversion">
+      <wsdl:input message="tns:getInfoCompConversion" name="getInfoCompConversion">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoCompConversionResponse" name="getInfoCompConversionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isNameChanged">
+      <wsdl:input message="tns:isNameChanged" name="isNameChanged">
+    </wsdl:input>
+      <wsdl:output message="tns:isNameChangedResponse" name="isNameChangedResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoFin10">
+      <wsdl:input message="tns:getInfoFin10" name="getInfoFin10">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoFin10Response" name="getInfoFin10Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoFinancialYear">
+      <wsdl:input message="tns:getInfoFinancialYear" name="getInfoFinancialYear">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoFinancialYearResponse" name="getInfoFinancialYearResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDetailsOfShareCapital">
+      <wsdl:input message="tns:getDetailsOfShareCapital" name="getDetailsOfShareCapital">
+    </wsdl:input>
+      <wsdl:output message="tns:getDetailsOfShareCapitalResponse" name="getDetailsOfShareCapitalResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoCompNameChg">
+      <wsdl:input message="tns:getInfoCompNameChg" name="getInfoCompNameChg">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoCompNameChgResponse" name="getInfoCompNameChgResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isCompanyConverted">
+      <wsdl:input message="tns:isCompanyConverted" name="isCompanyConverted">
+    </wsdl:input>
+      <wsdl:output message="tns:isCompanyConvertedResponse" name="isCompanyConvertedResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRocBusinessOfficers">
+      <wsdl:input message="tns:getRocBusinessOfficers" name="getRocBusinessOfficers">
+    </wsdl:input>
+      <wsdl:output message="tns:getRocBusinessOfficersResponse" name="getRocBusinessOfficersResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoListingByDateRange">
+      <wsdl:input message="tns:getInfoListingByDateRange" name="getInfoListingByDateRange">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoListingByDateRangeResponse" name="getInfoListingByDateRangeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDtlsOfShareCapCtc">
+      <wsdl:input message="tns:getDtlsOfShareCapCtc" name="getDtlsOfShareCapCtc">
+    </wsdl:input>
+      <wsdl:output message="tns:getDtlsOfShareCapCtcResponse" name="getDtlsOfShareCapCtcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDetailsOfShareholders">
+      <wsdl:input message="tns:getDetailsOfShareholders" name="getDetailsOfShareholders">
+    </wsdl:input>
+      <wsdl:output message="tns:getDetailsOfShareholdersResponse" name="getDetailsOfShareholdersResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoRobTerminationList">
+      <wsdl:input message="tns:getInfoRobTerminationList" name="getInfoRobTerminationList">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoRobTerminationListResponse" name="getInfoRobTerminationListResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoFinancialCtc">
+      <wsdl:input message="tns:getInfoFinancialCtc" name="getInfoFinancialCtc">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoFinancialCtcResponse" name="getInfoFinancialCtcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListOfficerYearChgs">
+      <wsdl:input message="tns:getListOfficerYearChgs" name="getListOfficerYearChgs">
+    </wsdl:input>
+      <wsdl:output message="tns:getListOfficerYearChgsResponse" name="getListOfficerYearChgsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getParticularsOfCosecCtc">
+      <wsdl:input message="tns:getParticularsOfCosecCtc" name="getParticularsOfCosecCtc">
+    </wsdl:input>
+      <wsdl:output message="tns:getParticularsOfCosecCtcResponse" name="getParticularsOfCosecCtcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertRegForeignCtc">
+      <wsdl:input message="tns:getCertRegForeignCtc" name="getCertRegForeignCtc">
+    </wsdl:input>
+      <wsdl:output message="tns:getCertRegForeignCtcResponse" name="getCertRegForeignCtcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCompProfileCtc">
+      <wsdl:input message="tns:getCompProfileCtc" name="getCompProfileCtc">
+    </wsdl:input>
+      <wsdl:output message="tns:getCompProfileCtcResponse" name="getCompProfileCtcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isAct2016">
+      <wsdl:input message="tns:isAct2016" name="isAct2016">
+    </wsdl:input>
+      <wsdl:output message="tns:isAct2016Response" name="isAct2016Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoBranchListing">
+      <wsdl:input message="tns:getInfoBranchListing" name="getInfoBranchListing">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoBranchListingResponse" name="getInfoBranchListingResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoAcgsQuery">
+      <wsdl:input message="tns:getInfoAcgsQuery" name="getInfoAcgsQuery">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoAcgsQueryResponse" name="getInfoAcgsQueryResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getParticularsOfAdtFirmCtc">
+      <wsdl:input message="tns:getParticularsOfAdtFirmCtc" name="getParticularsOfAdtFirmCtc">
+    </wsdl:input>
+      <wsdl:output message="tns:getParticularsOfAdtFirmCtcResponse" name="getParticularsOfAdtFirmCtcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertRegForeign">
+      <wsdl:input message="tns:getCertRegForeign" name="getCertRegForeign">
+    </wsdl:input>
+      <wsdl:output message="tns:getCertRegForeignResponse" name="getCertRegForeignResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoListingByDateRangeCnt">
+      <wsdl:input message="tns:getInfoListingByDateRangeCnt" name="getInfoListingByDateRangeCnt">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoListingByDateRangeCntResponse" name="getInfoListingByDateRangeCntResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertConversionCtc">
+      <wsdl:input message="tns:getCertConversionCtc" name="getCertConversionCtc">
+    </wsdl:input>
+      <wsdl:output message="tns:getCertConversionCtcResponse" name="getCertConversionCtcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBizCertCtc">
+      <wsdl:input message="tns:getBizCertCtc" name="getBizCertCtc">
+    </wsdl:input>
+      <wsdl:output message="tns:getBizCertCtcResponse" name="getBizCertCtcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCompProfile">
+      <wsdl:input message="tns:getCompProfile" name="getCompProfile">
+    </wsdl:input>
+      <wsdl:output message="tns:getCompProfileResponse" name="getCompProfileResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoListing">
+      <wsdl:input message="tns:getInfoListing" name="getInfoListing">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoListingResponse" name="getInfoListingResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoCompNameChgCtc">
+      <wsdl:input message="tns:getInfoCompNameChgCtc" name="getInfoCompNameChgCtc">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoCompNameChgCtcResponse" name="getInfoCompNameChgCtcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoFinancial">
+      <wsdl:input message="tns:getInfoFinancial" name="getInfoFinancial">
+    </wsdl:input>
+      <wsdl:output message="tns:getInfoFinancialResponse" name="getInfoFinancialResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="InfoServiceSoapBinding" type="tns:InfoService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getParticularsOfAdtFirm">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getParticularsOfAdtFirm">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getParticularsOfAdtFirmResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRocChangesRegisteredAddress">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getRocChangesRegisteredAddress">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRocChangesRegisteredAddressResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoChargeList">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoChargeList">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoChargeListResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoRobTerminationCtc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoRobTerminationCtc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoRobTerminationCtcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoRobTermination">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoRobTermination">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoRobTerminationResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBizProfileCtc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getBizProfileCtc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getBizProfileCtcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBasicCompProf">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getBasicCompProf">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getBasicCompProfResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoProfile">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoProfile">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoProfileResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertIncorp">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getCertIncorp">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCertIncorpResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLatestDocument">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getLatestDocument">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getLatestDocumentResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getParticularsOfCosec">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getParticularsOfCosec">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getParticularsOfCosecResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBizProfile">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getBizProfile">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getBizProfileResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFinComparison">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getFinComparison">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getFinComparisonResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoRegistration">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoRegistration">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoRegistrationResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isMyCoID2016">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="isMyCoID2016">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="isMyCoID2016Response">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoIncorp">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoIncorp">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoIncorpResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoParam">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoParam">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoParamResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDtlsOfShareholdersCtc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getDtlsOfShareholdersCtc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getDtlsOfShareholdersCtcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertConversion">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getCertConversion">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCertConversionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNewFormatEntityNo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getNewFormatEntityNo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getNewFormatEntityNoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertIncorpCtc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getCertIncorpCtc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCertIncorpCtcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoAcgs">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoAcgs">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoAcgsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListAddressYearChgs">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getListAddressYearChgs">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListAddressYearChgsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoFin5">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoFin5">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoFin5Response">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRocChgRegAddrCtc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getRocChgRegAddrCtc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRocChgRegAddrCtcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoFin3">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoFin3">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoFin3Response">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoFin2">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoFin2">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoFin2Response">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoChargesCtc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoChargesCtc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoChargesCtcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoBizCode">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoBizCode">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoBizCodeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoCharges">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoCharges">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoChargesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoListingByDateRangePage">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoListingByDateRangePage">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoListingByDateRangePageResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRocBizOfficersCtc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getRocBizOfficersCtc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRocBizOfficersCtcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoCompConversion">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoCompConversion">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoCompConversionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isNameChanged">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="isNameChanged">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="isNameChangedResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoFin10">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoFin10">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoFin10Response">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoFinancialYear">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoFinancialYear">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoFinancialYearResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDetailsOfShareCapital">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getDetailsOfShareCapital">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getDetailsOfShareCapitalResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoCompNameChg">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoCompNameChg">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoCompNameChgResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isCompanyConverted">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="isCompanyConverted">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="isCompanyConvertedResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRocBusinessOfficers">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getRocBusinessOfficers">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRocBusinessOfficersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoListingByDateRange">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoListingByDateRange">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoListingByDateRangeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDtlsOfShareCapCtc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getDtlsOfShareCapCtc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getDtlsOfShareCapCtcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDetailsOfShareholders">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getDetailsOfShareholders">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getDetailsOfShareholdersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoRobTerminationList">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoRobTerminationList">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoRobTerminationListResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoFinancialCtc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoFinancialCtc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoFinancialCtcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListOfficerYearChgs">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getListOfficerYearChgs">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListOfficerYearChgsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getParticularsOfCosecCtc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getParticularsOfCosecCtc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getParticularsOfCosecCtcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertRegForeignCtc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getCertRegForeignCtc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCertRegForeignCtcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCompProfileCtc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getCompProfileCtc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCompProfileCtcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isAct2016">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="isAct2016">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="isAct2016Response">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoBranchListing">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoBranchListing">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoBranchListingResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoAcgsQuery">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoAcgsQuery">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoAcgsQueryResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getParticularsOfAdtFirmCtc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getParticularsOfAdtFirmCtc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getParticularsOfAdtFirmCtcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertRegForeign">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getCertRegForeign">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCertRegForeignResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoListingByDateRangeCnt">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoListingByDateRangeCnt">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoListingByDateRangeCntResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertConversionCtc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getCertConversionCtc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCertConversionCtcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBizCertCtc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getBizCertCtc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getBizCertCtcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCompProfile">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getCompProfile">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCompProfileResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoListing">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoListing">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoListingResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoCompNameChgCtc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoCompNameChgCtc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoCompNameChgCtcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoFinancial">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfoFinancial">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoFinancialResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InfoService">
+    <wsdl:port binding="tns:InfoServiceSoapBinding" name="InfoServicePort">
+      <soap:address location="http://integrasiapistg.ssm4u.com.my/ssm/ssm4u/infoservice"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

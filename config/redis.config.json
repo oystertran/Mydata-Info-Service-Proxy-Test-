@@ -1,0 +1,34 @@
+{
+    "LOCAL": {
+        "REDIS_CNFG": {
+            "redis": {
+                "host": "172.19.194.141",
+                "port": 6379
+            }
+        }
+    },
+    "DEVT": {
+        "REDIS_CNFG": {
+            "redis": {
+                "host": "172.19.194.141",
+                "port": 6379
+            }
+        }
+    },
+    "STAG": {
+        "REDIS_CNFG": {
+            "redis": {
+                "host": "172.19.194.136",
+                "port": 6379
+            }
+        }
+    },
+    "PROD": {
+        "REDIS_CNFG": {
+            "redis": {
+                "host": "172.19.194.9",
+                "port": 6379
+            }
+        }
+    }
+}
