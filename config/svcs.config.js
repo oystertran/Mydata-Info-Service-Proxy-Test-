@@ -1,7 +1,8 @@
 // const { profileSoap } = require('../config-soap/profile.js');
 // const { chargesSoap } = require('../config-soap/charges.js');
 // const { entitySoap } = require('../config-soap/entity.js');
-const { acgsSoap } = require('../config-soap/acgs.js');
+const { acgsSoap } = require("../config-soap/acgs.js");
+const { finSoap } = require("../config-soap/fin.js");
 // const { certSoap } = require('../config-soap/cert.js');
 // const { financialSoap } = require('../config-soap/financial.js');
 // const { particularSoap } = require('../config-soap/particular.js');
@@ -10,6 +11,7 @@ const { acgsSoap } = require('../config-soap/acgs.js');
 let services = new Map();
 
 acgsSoap(services);
+finSoap(services);
 // chargesSoap(services);
 // certSoap(services);
 // entitySoap(services);
