@@ -16,7 +16,7 @@ const redis_cnfg = require("./config/redis.config.json")[
 
 var express = require("express");
 var main = require("./app/routes/main.js");
-// var profile = require('./app/routes/profile.js');
+var profile = require('./app/routes/profile.js');
 // var entity = require('./app/routes/entity.js');
 // var param = require('./app/routes/param.js');
 // var term = require('./app/routes/term.js')
@@ -61,6 +61,7 @@ REST.prototype.configureExpress = function () {
   var main_router = new main(router);
   var acgs_router = new acgs(router);
   var fin_router = new fin(router);
+  var profile_router = new profile(router);
 
   app.get("/", function (req, res) {
     res.json({ Message: "SSMMW-INFO-SERVICE" });
