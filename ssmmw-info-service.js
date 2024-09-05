@@ -22,7 +22,7 @@ var profile = require('./app/routes/profile.js');
 // var term = require('./app/routes/term.js')
 var acgs = require("./app/routes/acgs.js");
 var fin = require("./app/routes/fin.js");
-// var cert = require('./app/routes/cert.js');
+var cert = require('./app/routes/cert.js');
 // var fincomp = require('./app/routes/fincomp.js');
 // var biz = require('./app/routes/biz.js');
 // var charges = require('./app/routes/charges.js');
@@ -62,6 +62,7 @@ REST.prototype.configureExpress = function () {
   var acgs_router = new acgs(router);
   var fin_router = new fin(router);
   var profile_router = new profile(router);
+  var cert_router = new cert(router);
 
   app.get("/", function (req, res) {
     res.json({ Message: "SSMMW-INFO-SERVICE" });
