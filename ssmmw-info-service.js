@@ -17,17 +17,9 @@ const redis_cnfg = require("./config/redis.config.json")[
 var express = require("express");
 var main = require("./app/routes/main.js");
 var profile = require('./app/routes/profile.js');
-// var entity = require('./app/routes/entity.js');
-// var param = require('./app/routes/param.js');
-// var term = require('./app/routes/term.js')
 var acgs = require("./app/routes/acgs.js");
 var fin = require("./app/routes/fin.js");
 var cert = require('./app/routes/cert.js');
-// var fincomp = require('./app/routes/fincomp.js');
-// var biz = require('./app/routes/biz.js');
-// var charges = require('./app/routes/charges.js');
-// var particular = require('./app/routes/particular.js')
-// var echo = require('./app/routes/echo.js')
 
 var app = express();
 

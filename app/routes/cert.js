@@ -6,7 +6,7 @@ function CERT_ROUTER(router) {
 }
 
 CERT_ROUTER.prototype.handleRoutes = function (router) {   
-
+    //create a get request to 
     router.get("/cert/isAct2016/:compNo", cert.isAct2016, cert.procRPC);
 
 }
