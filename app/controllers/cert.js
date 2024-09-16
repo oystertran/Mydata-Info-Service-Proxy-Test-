@@ -15,3 +15,9 @@ exports.procRPC = (req, res) => {
 	return worker_proc.proc(req.local)
 		.then(data => res.json(data))
 }
+
+exports.procJob = (req, res) => {
+    processJob().procJob(req.local)
+        .then(data => httpResp(req, res).success(data))
+        .catch(err => httpResp(req, res).stacktrace(err))
+}
